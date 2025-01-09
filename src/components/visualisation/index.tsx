@@ -22,6 +22,7 @@ const BuildingVisualization = () => {
   const [scale, setScale] = useState(1);
 
   // Sample building data
+  //@ts-ignore
   const sampleBuilding: GraphBuilding = data;
 
   useEffect(() => {

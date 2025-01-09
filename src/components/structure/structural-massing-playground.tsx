@@ -8,6 +8,7 @@ const StructuralMassingPlayground: React.FC = () => {
 
   const handleCreateNewMassing = () => {
     // Here you can define some default massing data or a way to generate new mass shapes
+    //@ts-ignore
     const newMassing: GraphBuilding = data;
 
     setBuildingData(newMassing);

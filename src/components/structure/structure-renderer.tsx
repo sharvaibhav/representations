@@ -71,6 +71,7 @@ export const StructureRenderer: React.FC<View3DProps> = ({ buildingData }) => {
       // Disable mouse controls while dragging with TransformControls
       transformControls.addEventListener("dragging-changed", (event) => {
         mouseControlsEnabledRef.current = !event.value; // Disable mouse controls when dragging
+        //@ts-ignore
         sceneManager.setMouseControlsEnabled(mouseControlsEnabledRef.current);
       });
 

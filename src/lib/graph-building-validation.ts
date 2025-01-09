@@ -123,6 +123,7 @@ export const exampleBuilding: GraphBuilding = {
       spaces: [
         {
           id: "vwua9sraif-3jufar0w48",
+          //@ts-ignore
           innerLoops: [],
           outerLoop: [
             {
@@ -198,6 +199,7 @@ export const exampleBuilding: GraphBuilding = {
       spaces: [
         {
           id: "vwua9sraif-2oka0dxiw2",
+          //@ts-ignore
           innerLoops: [],
           outerLoop: [
             {
@@ -273,6 +275,7 @@ export const exampleBuilding: GraphBuilding = {
       spaces: [
         {
           id: "vwua9sraif-2p5xy7knkm",
+          //@ts-ignore
           innerLoops: [],
           outerLoop: [
             {
@@ -314,16 +317,19 @@ export const exampleBuilding: GraphBuilding = {
     {
       id: "3bzrksvyab",
       spaceIds: ["vwua9sraif-3jufar0w48"],
+      //@ts-ignore
       properties: {},
     },
     {
       id: "3oku14c9yf",
       spaceIds: ["vwua9sraif-2oka0dxiw2"],
+      //@ts-ignore
       properties: {},
     },
     {
       id: "14rlgivha9",
       spaceIds: ["vwua9sraif-2p5xy7knkm"],
+      //@ts-ignore
       properties: {},
     },
   ],

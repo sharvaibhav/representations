@@ -14,7 +14,7 @@ export class SceneManager {
   private camera: THREE.PerspectiveCamera;
   private renderer: THREE.WebGLRenderer;
   private controls: OrbitControls;
-  private buildingBounds: BuildingBounds;
+  private buildingBounds: any;
 
   constructor(
     private container: HTMLElement,
@@ -180,7 +180,7 @@ export class SceneManager {
     );
   }
 
-  private calculateBuildingBounds(buildingData: GraphBuilding): BuildingBounds {
+  private calculateBuildingBounds(buildingData: GraphBuilding) {
     let minX = Infinity,
       minY = Infinity,
       maxX = -Infinity,
