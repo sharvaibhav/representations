@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import type { GraphBuilding } from "@/types/graph-building";
+import { Group } from "three";
 
 export interface BuildingMaterialOptions {
   baseColor: number;
@@ -10,16 +11,23 @@ export interface BuildingMaterialOptions {
 }
 
 export class GraphBuildingRenderer {
+  private currentHeight: number = 0;
+  private buildingGroup: Group;
+
   constructor(
     private scene: THREE.Scene,
     private materialOptions: BuildingMaterialOptions
-  ) {}
+  ) {
+    this.buildingGroup = new Group();
+    this.scene.add(this.buildingGroup);
+  }
 
   public renderBuilding(
     buildingData: GraphBuilding,
-    selectedLevel: number
+    selectedLevel: number = 0
   ): void {
     this.clearBuildingMeshes();
+    this.currentHeight = 0;
     buildingData.levels.forEach((level, levelIndex) => {
       this.renderLevel(level, levelIndex, selectedLevel);
     });
@@ -30,8 +38,8 @@ export class GraphBuildingRenderer {
     levelIndex: number,
     selectedLevel: number
   ): void {
-    const levelHeight = level.height || 3;
-    const baseHeight = levelIndex * levelHeight;
+    const levelHeight = level.height;
+    const baseHeight = this.currentHeight;
 
     level.spaces.forEach((space) => {
       const points = this.collectSpacePoints(space, level);
@@ -44,6 +52,7 @@ export class GraphBuildingRenderer {
       this.createAndAddMesh(geometry, materials, baseHeight);
       this.addEdges(geometry, baseHeight);
     });
+    this.currentHeight += levelHeight;
   }
 
   private collectSpacePoints(
@@ -116,7 +125,8 @@ export class GraphBuildingRenderer {
     mesh.castShadow = true;
     mesh.receiveShadow = true;
     mesh.userData.type = "building";
-    this.scene.add(mesh);
+    this.buildingGroup.add(mesh);
+    // this.scene.add(mesh);
   }
 
   private addEdges(geometry: THREE.ExtrudeGeometry, baseHeight: number): void {
@@ -136,5 +146,9 @@ export class GraphBuildingRenderer {
     this.scene.children = this.scene.children.filter(
       (child) => !child.userData.type || child.userData.type !== "building"
     );
+  }
+
+  getBuildingGroup(): Group {
+    return this.buildingGroup;
   }
 }

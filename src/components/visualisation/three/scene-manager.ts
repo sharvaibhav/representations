@@ -31,6 +31,14 @@ export class SceneManager {
     this.setupEventListeners();
   }
 
+  getCamera() {
+    return this.camera;
+  }
+
+  getRenderer() {
+    return this.renderer;
+  }
+
   private setupCamera(): THREE.PerspectiveCamera {
     const maxDimension = this.getMaxDimension();
     const camera = new THREE.PerspectiveCamera(

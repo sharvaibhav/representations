@@ -1,0 +1,202 @@
+{
+  "levels": [
+    {
+      "height": 3,
+      "points": {
+        "p1-l1": [0, 0],
+        "p2-l1": [10, 0],
+        "p3-l1": [10, 10],
+        "p4-l1": [0, 10]
+      },
+      "surfaces": [
+        { "id": "s1-l1", "pointA": "p1-l1", "pointB": "p2-l1" },
+        { "id": "s2-l1", "pointA": "p2-l1", "pointB": "p3-l1" },
+        { "id": "s3-l1", "pointA": "p3-l1", "pointB": "p4-l1" },
+        { "id": "s4-l1", "pointA": "p4-l1", "pointB": "p1-l1" }
+      ],
+      "spaces": [
+        {
+          "id": "space-l1",
+          "innerLoops": [],
+          "outerLoop": [
+            { "id": "loop1-l1", "surfaceId": "s1-l1", "directionAToB": true },
+            { "id": "loop2-l1", "surfaceId": "s2-l1", "directionAToB": true },
+            { "id": "loop3-l1", "surfaceId": "s3-l1", "directionAToB": true },
+            { "id": "loop4-l1", "surfaceId": "s4-l1", "directionAToB": true }
+          ]
+        }
+      ]
+    },
+    {
+      "height": 3.5,
+      "points": {
+        "p1-l2": [0, 0],
+        "p2-l2": [10, 0],
+        "p3-l2": [10, 10],
+        "p4-l2": [0, 10]
+      },
+      "surfaces": [
+        { "id": "s1-l2", "pointA": "p1-l2", "pointB": "p2-l2" },
+        { "id": "s2-l2", "pointA": "p2-l2", "pointB": "p3-l2" },
+        { "id": "s3-l2", "pointA": "p3-l2", "pointB": "p4-l2" },
+        { "id": "s4-l2", "pointA": "p4-l2", "pointB": "p1-l2" }
+      ],
+      "spaces": [
+        {
+          "id": "space-l2",
+          "innerLoops": [],
+          "outerLoop": [
+            { "id": "loop1-l2", "surfaceId": "s1-l2", "directionAToB": true },
+            { "id": "loop2-l2", "surfaceId": "s2-l2", "directionAToB": true },
+            { "id": "loop3-l2", "surfaceId": "s3-l2", "directionAToB": true },
+            { "id": "loop4-l2", "surfaceId": "s4-l2", "directionAToB": true }
+          ]
+        }
+      ]
+    },
+    {
+      "height": 4,
+      "points": {
+        "p1-l3": [0, 0],
+        "p2-l3": [10, 0],
+        "p3-l3": [10, 10],
+        "p4-l3": [0, 10]
+      },
+      "surfaces": [
+        { "id": "s1-l3", "pointA": "p1-l3", "pointB": "p2-l3" },
+        { "id": "s2-l3", "pointA": "p2-l3", "pointB": "p3-l3" },
+        { "id": "s3-l3", "pointA": "p3-l3", "pointB": "p4-l3" },
+        { "id": "s4-l3", "pointA": "p4-l3", "pointB": "p1-l3" }
+      ],
+      "spaces": [
+        {
+          "id": "space-l3",
+          "innerLoops": [],
+          "outerLoop": [
+            { "id": "loop1-l3", "surfaceId": "s1-l3", "directionAToB": true },
+            { "id": "loop2-l3", "surfaceId": "s2-l3", "directionAToB": true },
+            { "id": "loop3-l3", "surfaceId": "s3-l3", "directionAToB": true },
+            { "id": "loop4-l3", "surfaceId": "s4-l3", "directionAToB": true }
+          ]
+        }
+      ]
+    },
+    {
+      "height": 4.5,
+      "points": {
+        "p1-l4": [0, 0],
+        "p2-l4": [10, 0],
+        "p3-l4": [10, 10],
+        "p4-l4": [0, 10]
+      },
+      "surfaces": [
+        { "id": "s1-l4", "pointA": "p1-l4", "pointB": "p2-l4" },
+        { "id": "s2-l4", "pointA": "p2-l4", "pointB": "p3-l4" },
+        { "id": "s3-l4", "pointA": "p3-l4", "pointB": "p4-l4" },
+        { "id": "s4-l4", "pointA": "p4-l4", "pointB": "p1-l4" }
+      ],
+      "spaces": [
+        {
+          "id": "space-l4",
+          "innerLoops": [],
+          "outerLoop": [
+            { "id": "loop1-l4", "surfaceId": "s1-l4", "directionAToB": true },
+            { "id": "loop2-l4", "surfaceId": "s2-l4", "directionAToB": true },
+            { "id": "loop3-l4", "surfaceId": "s3-l4", "directionAToB": true },
+            { "id": "loop4-l4", "surfaceId": "s4-l4", "directionAToB": true }
+          ]
+        }
+      ]
+    },
+    {
+      "height": 5,
+      "points": {
+        "p1-l5": [0, 0],
+        "p2-l5": [10, 0],
+        "p3-l5": [10, 10],
+        "p4-l5": [0, 10]
+      },
+      "surfaces": [
+        { "id": "s1-l5", "pointA": "p1-l5", "pointB": "p2-l5" },
+        { "id": "s2-l5", "pointA": "p2-l5", "pointB": "p3-l5" },
+        { "id": "s3-l5", "pointA": "p3-l5", "pointB": "p4-l5" },
+        { "id": "s4-l5", "pointA": "p4-l5", "pointB": "p1-l5" }
+      ],
+      "spaces": [
+        {
+          "id": "space-l5",
+          "innerLoops": [],
+          "outerLoop": [
+            { "id": "loop1-l5", "surfaceId": "s1-l5", "directionAToB": true },
+            { "id": "loop2-l5", "surfaceId": "s2-l5", "directionAToB": true },
+            { "id": "loop3-l5", "surfaceId": "s3-l5", "directionAToB": true },
+            { "id": "loop4-l5", "surfaceId": "s4-l5", "directionAToB": true }
+          ]
+        }
+      ]
+    },
+    {
+      "height": 5.5,
+      "points": {
+        "p1-l6": [0, 0],
+        "p2-l6": [10, 0],
+        "p3-l6": [10, 10],
+        "p4-l6": [0, 10]
+      },
+      "surfaces": [
+        { "id": "s1-l6", "pointA": "p1-l6", "pointB": "p2-l6" },
+        { "id": "s2-l6", "pointA": "p2-l6", "pointB": "p3-l6" },
+        { "id": "s3-l6", "pointA": "p3-l6", "pointB": "p4-l6" },
+        { "id": "s4-l6", "pointA": "p4-l6", "pointB": "p1-l6" }
+      ],
+      "spaces": [
+        {
+          "id": "space-l6",
+          "innerLoops": [],
+          "outerLoop": [
+            { "id": "loop1-l6", "surfaceId": "s1-l6", "directionAToB": true },
+            { "id": "loop2-l6", "surfaceId": "s2-l6", "directionAToB": true },
+            { "id": "loop3-l6", "surfaceId": "s3-l6", "directionAToB": true },
+            { "id": "loop4-l6", "surfaceId": "s4-l6", "directionAToB": true }
+          ]
+        }
+      ]
+    },
+    {
+      "height": 6,
+      "points": {
+        "p1-l7": [0, 0],
+        "p2-l7": [10, 0],
+        "p3-l7": [10, 10],
+        "p4-l7": [0, 10]
+      },
+      "surfaces": [
+        { "id": "s1-l7", "pointA": "p1-l7", "pointB": "p2-l7" },
+        { "id": "s2-l7", "pointA": "p2-l7", "pointB": "p3-l7" },
+        { "id": "s3-l7", "pointA": "p3-l7", "pointB": "p4-l7" },
+        { "id": "s4-l7", "pointA": "p4-l7", "pointB": "p1-l7" }
+      ],
+      "spaces": [
+        {
+          "id": "space-l7",
+          "innerLoops": [],
+          "outerLoop": [
+            { "id": "loop1-l7", "surfaceId": "s1-l7", "directionAToB": true },
+            { "id": "loop2-l7", "surfaceId": "s2-l7", "directionAToB": true },
+            { "id": "loop3-l7", "surfaceId": "s3-l7", "directionAToB": true },
+            { "id": "loop4-l7", "surfaceId": "s4-l7", "directionAToB": true }
+          ]
+        }
+      ]
+    }
+  ],
+  "units": [
+    { "id": "unit-l1", "spaceIds": ["space-l1"], "properties": {} },
+    { "id": "unit-l2", "spaceIds": ["space-l2"], "properties": {} },
+    { "id": "unit-l3", "spaceIds": ["space-l3"], "properties": {} },
+    { "id": "unit-l4", "spaceIds": ["space-l4"], "properties": {} },
+    { "id": "unit-l5", "spaceIds": ["space-l5"], "properties": {} },
+    { "id": "unit-l6", "spaceIds": ["space-l6"], "properties": {} },
+    { "id": "unit-l7", "spaceIds": ["space-l7"], "properties": {} }
+  ]
+}
