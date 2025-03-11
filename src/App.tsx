@@ -9,6 +9,7 @@ const App: React.FC = () => {
       <div className="min-h-screen w-full bg-gray-100 p-4">
         <Routes>
           <Route path="/" element={<BuildingVisualization />} />
+          <Route path="/rep" element={<BuildingVisualization />} />
           <Route
             path="/massing-playground"
             element={<StructuralMassingPlayground />}
