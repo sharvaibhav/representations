@@ -212,4 +212,22 @@ export class SceneManager {
       },
     };
   }
+
+  public resize(width: number, height: number): void {
+    console.log(`Resizing renderer to ${width}x${height}`);
+
+    this.camera.aspect = width / height;
+    this.camera.updateProjectionMatrix();
+
+    this.renderer.setSize(width, height);
+
+    const pixelRatio = window.devicePixelRatio;
+    this.renderer.setPixelRatio(pixelRatio);
+
+    this.renderer.render(this.scene, this.camera);
+  }
+
+  setMouseControlsEnabled(enabled: boolean): void {
+    this.controls.enabled = enabled;
+  }
 }
